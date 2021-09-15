@@ -1,0 +1,10 @@
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\bin\Debug\SprintOneV1.exe.config
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\bin\Debug\SprintOneV1.exe
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\bin\Debug\SprintOneV1.pdb
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.csprojAssemblyReference.cache
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.Properties.Resources.resources
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.csproj.GenerateResource.cache
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.csproj.CoreCompileInputs.cache
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.exe
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.pdb
+E:\Tafe Work\ICT40120 (AC07)\C Sharp One - Stewart\_assess\AT2 Sprint\SprintOne_v1\SprintOneV1\obj\Debug\SprintOneV1.AstronomicalProcessing.resources
