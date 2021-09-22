@@ -96,6 +96,7 @@ namespace SprintOneV1
             else
                 MessageBox.Show("Error: Limit reached", "Error");
             DisplayTasks();
+            TextBoxInput.Focus();
         }
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
@@ -206,7 +207,16 @@ namespace SprintOneV1
                 }
             }
             DisplayTasks();
+            TextBoxInput.Focus();
         }
-        #endregion
+        private void TextBoxInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // stops letters and control characters from being entered
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        #endregion 
     }
 }

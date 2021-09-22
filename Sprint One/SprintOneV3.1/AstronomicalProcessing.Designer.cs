@@ -47,7 +47,7 @@ namespace SprintOneV1
             this.ButtonAdd.Location = new System.Drawing.Point(147, 27);
             this.ButtonAdd.Name = "ButtonAdd";
             this.ButtonAdd.Size = new System.Drawing.Size(75, 23);
-            this.ButtonAdd.TabIndex = 0;
+            this.ButtonAdd.TabIndex = 2;
             this.ButtonAdd.Text = "Add";
             this.ButtonAdd.UseVisualStyleBackColor = true;
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
@@ -57,7 +57,7 @@ namespace SprintOneV1
             this.ButtonEdit.Location = new System.Drawing.Point(147, 56);
             this.ButtonEdit.Name = "ButtonEdit";
             this.ButtonEdit.Size = new System.Drawing.Size(75, 23);
-            this.ButtonEdit.TabIndex = 1;
+            this.ButtonEdit.TabIndex = 4;
             this.ButtonEdit.Text = "Edit";
             this.ButtonEdit.UseVisualStyleBackColor = true;
             this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
@@ -67,7 +67,7 @@ namespace SprintOneV1
             this.ButtonDelete.Location = new System.Drawing.Point(228, 27);
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.Size = new System.Drawing.Size(75, 23);
-            this.ButtonDelete.TabIndex = 2;
+            this.ButtonDelete.TabIndex = 3;
             this.ButtonDelete.Text = "Delete";
             this.ButtonDelete.UseVisualStyleBackColor = true;
             this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
@@ -77,7 +77,7 @@ namespace SprintOneV1
             this.ButtonSort.Location = new System.Drawing.Point(228, 56);
             this.ButtonSort.Name = "ButtonSort";
             this.ButtonSort.Size = new System.Drawing.Size(75, 23);
-            this.ButtonSort.TabIndex = 3;
+            this.ButtonSort.TabIndex = 5;
             this.ButtonSort.Text = "Sort";
             this.ButtonSort.UseVisualStyleBackColor = true;
             this.ButtonSort.Click += new System.EventHandler(this.ButtonSort_Click);
@@ -87,7 +87,7 @@ namespace SprintOneV1
             this.ButtonSearch.Location = new System.Drawing.Point(147, 85);
             this.ButtonSearch.Name = "ButtonSearch";
             this.ButtonSearch.Size = new System.Drawing.Size(75, 23);
-            this.ButtonSearch.TabIndex = 4;
+            this.ButtonSearch.TabIndex = 6;
             this.ButtonSearch.Text = "Search";
             this.ButtonSearch.UseVisualStyleBackColor = true;
             this.ButtonSearch.Click += new System.EventHandler(this.ButtonSearch_Click);
@@ -97,7 +97,7 @@ namespace SprintOneV1
             this.ButonFill.Location = new System.Drawing.Point(228, 359);
             this.ButonFill.Name = "ButonFill";
             this.ButonFill.Size = new System.Drawing.Size(75, 23);
-            this.ButonFill.TabIndex = 5;
+            this.ButonFill.TabIndex = 7;
             this.ButonFill.Text = "Auto Fill";
             this.ButonFill.UseVisualStyleBackColor = true;
             this.ButonFill.Click += new System.EventHandler(this.ButonFill_Click);
@@ -107,7 +107,8 @@ namespace SprintOneV1
             this.TextBoxInput.Location = new System.Drawing.Point(12, 27);
             this.TextBoxInput.Name = "TextBoxInput";
             this.TextBoxInput.Size = new System.Drawing.Size(129, 20);
-            this.TextBoxInput.TabIndex = 6;
+            this.TextBoxInput.TabIndex = 1;
+            this.TextBoxInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInput_KeyPress);
             // 
             // ListBoxNumbers
             // 
@@ -115,7 +116,7 @@ namespace SprintOneV1
             this.ListBoxNumbers.Location = new System.Drawing.Point(12, 53);
             this.ListBoxNumbers.Name = "ListBoxNumbers";
             this.ListBoxNumbers.Size = new System.Drawing.Size(129, 329);
-            this.ListBoxNumbers.TabIndex = 7;
+            this.ListBoxNumbers.TabIndex = 8;
             this.ListBoxNumbers.Click += new System.EventHandler(this.ListBoxNumbers_Click);
             // 
             // StatusStripFeedback
