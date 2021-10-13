@@ -109,7 +109,7 @@ namespace SprintOneV1
         }
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
-            // if input is anything other than integer or nothing is selected  display error 
+            // S1 PR if input is anything other than integer or nothing is selected  display error 
             if (!string.IsNullOrEmpty(TextBoxInput.Text) && TextBoxInput.Text.All(Char.IsDigit) && (ListBoxNumbers.SelectedIndex != -1))
             {
                 int currentNumber = int.Parse(ListBoxNumbers.SelectedIndex.ToString());
@@ -129,7 +129,7 @@ namespace SprintOneV1
         }
         private void ButtonSearch_Click(object sender, EventArgs e)
         {
-            // If Integer is not selected or if letter or control is entered display error
+            // S! PR If Integer is not selected or if letter or control is entered display error
             if (!string.IsNullOrEmpty(TextBoxInput.Text) && TextBoxInput.Text.All(Char.IsDigit))
             {
                 // S1 CR The client can use a text box input to search the array.
@@ -229,8 +229,9 @@ namespace SprintOneV1
         #endregion
 
         #region Sprint Two
-        
 
+        // S2 CR A button to initiate a sequential search 
+        //S2 PRThe sequential sort method must be coded using a single FOR loop and one IF condition
         private void ButtonSeqSearch_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TextBoxInput.Text))
@@ -240,6 +241,7 @@ namespace SprintOneV1
                     if (int.Parse(TextBoxInput.Text) == arrayOfNumbers[i])
                     {
                         ListBoxNumbers.SelectedIndex = i;
+                        // S2 PR The program must generate a message if the search is successful.
                         ToolStripStatusLabel1.Text = "Target Found";
                         TextBoxInput.Clear();
                         TextBoxInput.Focus();
@@ -258,7 +260,7 @@ namespace SprintOneV1
                 MessageBox.Show("Text box is either empty or invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
-
+        // S2 CR a button to calculate the mode
         private void ButtonMode_Click(object sender, EventArgs e)
         {
             int element;
@@ -282,11 +284,13 @@ namespace SprintOneV1
                     }
                 }
             }
+            //The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
             TextBoxModeOutput.Text = mode.ToString("F");
         }
-
+        // S2 CR a button to calculate the range
         private void ButtonRange_Click(object sender, EventArgs e)
         {
+            //The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
             TextBoxRangeOutput.Text = (findMax() - findMin()).ToString();
         }
         private int findMax()
@@ -313,12 +317,13 @@ namespace SprintOneV1
             }
             return minValue;
         }
-
+        // S2 CR a button to calculate the mid extreme
         private void ButtonMidExtreme_Click(object sender, EventArgs e)
         {
+            //The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
             TextBoxMidExtremeOutput.Text = ((findMax() - findMin())/ 2).ToString();
         }
-
+        // S2 CR a button to calculate the average
         private void ButtonAverage_Click(object sender, EventArgs e)
         {
             float sum = 0;
@@ -328,6 +333,7 @@ namespace SprintOneV1
                
             }
             float avg = sum / nextEmptyTask;
+            // PR The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
             TextBoxAverageOutput.Text = avg.ToString("F");
         }
         #endregion

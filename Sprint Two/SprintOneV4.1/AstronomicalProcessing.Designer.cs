@@ -213,7 +213,7 @@ namespace SprintOneV1
             this.TextBoxMidExtremeOutput.Location = new System.Drawing.Point(228, 209);
             this.TextBoxMidExtremeOutput.Name = "TextBoxMidExtremeOutput";
             this.TextBoxMidExtremeOutput.ReadOnly = true;
-            this.TextBoxMidExtremeOutput.Size = new System.Drawing.Size(90, 20);
+            this.TextBoxMidExtremeOutput.Size = new System.Drawing.Size(78, 20);
             this.TextBoxMidExtremeOutput.TabIndex = 14;
             // 
             // TextBoxModeOutput
@@ -221,7 +221,7 @@ namespace SprintOneV1
             this.TextBoxModeOutput.Location = new System.Drawing.Point(230, 239);
             this.TextBoxModeOutput.Name = "TextBoxModeOutput";
             this.TextBoxModeOutput.ReadOnly = true;
-            this.TextBoxModeOutput.Size = new System.Drawing.Size(88, 20);
+            this.TextBoxModeOutput.Size = new System.Drawing.Size(76, 20);
             this.TextBoxModeOutput.TabIndex = 15;
             // 
             // TextBoxAverageOutput
@@ -229,7 +229,7 @@ namespace SprintOneV1
             this.TextBoxAverageOutput.Location = new System.Drawing.Point(228, 271);
             this.TextBoxAverageOutput.Name = "TextBoxAverageOutput";
             this.TextBoxAverageOutput.ReadOnly = true;
-            this.TextBoxAverageOutput.Size = new System.Drawing.Size(90, 20);
+            this.TextBoxAverageOutput.Size = new System.Drawing.Size(78, 20);
             this.TextBoxAverageOutput.TabIndex = 16;
             // 
             // TextBoxRangeOutput
@@ -237,7 +237,7 @@ namespace SprintOneV1
             this.TextBoxRangeOutput.Location = new System.Drawing.Point(228, 301);
             this.TextBoxRangeOutput.Name = "TextBoxRangeOutput";
             this.TextBoxRangeOutput.ReadOnly = true;
-            this.TextBoxRangeOutput.Size = new System.Drawing.Size(90, 20);
+            this.TextBoxRangeOutput.Size = new System.Drawing.Size(78, 20);
             this.TextBoxRangeOutput.TabIndex = 17;
             // 
             // AstronomicalProcessing
