@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Diagnostics;
 using System.Windows.Forms;
 // Shaun Rawlings & Scott King, Sprint Number One
 // Date:22/09/21
@@ -206,7 +207,7 @@ namespace SprintOneV1
                 for (int i = x + 1; i < nextEmptyTask; i++)
                 {
                     // compares value of first for loop with value of the second for loop
-                    // if value of forst is larger than the second it swaps them.
+                    // if value of first is larger than the second it swaps them.
                     if (arrayOfNumbers[x] > arrayOfNumbers[i])
                     {
                         int temp = arrayOfNumbers[i];
@@ -285,7 +286,7 @@ namespace SprintOneV1
                 }
             }
             //The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
-            TextBoxModeOutput.Text = mode.ToString("F");
+            TextBoxModeOutput.Text = mode.ToString();
         }
         // S2 CR a button to calculate the range
         private void ButtonRange_Click(object sender, EventArgs e)
@@ -293,9 +294,11 @@ namespace SprintOneV1
             //The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
             TextBoxRangeOutput.Text = (findMax() - findMin()).ToString();
         }
+        // formula to find max value or array
         private int findMax()
         {
             int maxValue = 0;
+           // Trace.TraceInformation("maxValue {0}", maxValue);// output trace information
             for (int i = 0; i < nextEmptyTask; i++)
             {
                 if (arrayOfNumbers[i] >= maxValue)
@@ -305,9 +308,11 @@ namespace SprintOneV1
             }
             return maxValue;
         }
+        // formula to find minimum value of array 
         private int findMin()
         {
             int minValue = 100;
+            //Trace.TraceInformation("minValue {0}", minValue);// output trace information
             for (int i = 0; i < nextEmptyTask; i++)
             {
                 if (arrayOfNumbers[i] <= minValue)
@@ -321,7 +326,7 @@ namespace SprintOneV1
         private void ButtonMidExtreme_Click(object sender, EventArgs e)
         {
             //The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
-            TextBoxMidExtremeOutput.Text = ((findMax() - findMin())/ 2).ToString();
+            TextBoxMidExtremeOutput.Text = ((findMax() + findMin())/ 2).ToString();
         }
         // S2 CR a button to calculate the average
         private void ButtonAverage_Click(object sender, EventArgs e)
@@ -332,7 +337,7 @@ namespace SprintOneV1
                 sum += arrayOfNumbers[i];
                
             }
-            float avg = sum / nextEmptyTask;
+            float avg = sum / nextEmptyTask; // uses float division 
             // PR The mathematic calculations will display in separate text boxes formatted to 2 decimal places as appropriate.
             TextBoxAverageOutput.Text = avg.ToString("F");
         }
